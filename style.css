@@ -39,7 +39,6 @@ body{
 nav{
     flex: 1;
     text-align: right;
-
 }
 nav ul li{
     list-style: none;
@@ -189,40 +188,54 @@ button:hover {
     .col-1 h2{
         font-size: 40px;
     }
-
 }
-/* .moving-page{
-    padding-top: 175px;
-} */
-.parallax{
 
+
+.moving-page{
+    padding-top: 15%;
+}
+
+.parallax{
     background-image: url("image/shapes.jpg");
-    min-height: 500px;
+    min-height: 100px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size:cover ;
 }
 
-.upper-parallax{
+.welcome {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 20px 0;
-    padding-left: 8%;
-    padding-right: 8%;
-}
-.upper-parallax-text{
-    padding: 2px 16px;
-}
-.upper-parallax img{
-    width: 100%;
 }
 
-.upper-card01{
-    margin-left:50px ;
+.welcome-col01{
+    flex-basis: 50%;
+    position: relative;
 }
 
+.welcome-col02{
+    flex-basis: 50%;
+    position: relative;
+}
 
-    
-    
+.welcome ul{
+    text-align: center;
+}
+.welcome ul li{
+    margin-top: 20px;
+    list-style: none;
+    border: 1px #3191ff solid;
+}
+
+.welcome-col01 ul li a{
+    text-decoration: none;
+    color: #3191ff;
+    font-size: 20px;
+}
+
+.welcome-col02 h1,.welcome-col02 h3{
+    text-align: right;
+}
