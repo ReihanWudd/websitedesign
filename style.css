@@ -3,9 +3,9 @@
     padding: 0;
     font-family: sans-serif;
 }
-body{
+/* body{
     height: 2000px;
-}
+} */
 .container{
     width: 100%;
     min-height: 100vh;
@@ -313,6 +313,7 @@ button:hover {
 
 .image-galery-title{
     align-items: center;
+    padding-bottom:50px ;
 }
 .image-galery-title h1{
     text-align: center;
@@ -326,6 +327,7 @@ button:hover {
 .image-galery-img{
     width: 100%;
     transition: 0.4s;
+    cursor: pointer;
 }
 
 .image-galery-img:hover{
@@ -345,6 +347,7 @@ button:hover {
     align-items: center;
     justify-content: center;
     z-index: 6;
+    
 }
 
 .full-image img{
@@ -360,3 +363,61 @@ button:hover {
     color: white;
     cursor: pointer;
 }
+.container-pilihan-jasa{
+    display: flex;
+    padding-top: 200px;
+    padding-bottom: 100px;
+    /* flex-direction: row; */
+    flex-basis: 60%;
+    padding-left: 20%;
+    padding-right: 20%;
+    align-items: center;
+    justify-content: space-between;
+    /* margin: 20px 0; */
+}
+
+.kartu-pertama{
+    text-align: center;
+    flex-basis: 25%;
+}
+
+.ukuran-img-kartu{
+    width: 60%;
+}
+
+.kartu-pertama h2{
+    font-size: 30px;
+    margin-top:20px;
+    margin-bottom:10px ;
+}
+.kartu-pertama p{
+    font-size: 22px;
+    color: rgba(0, 0, 0, 0.836);
+    padding-bottom: 20px;
+}
+
+.kartu-tombol{
+    position: relative;
+    background:linear-gradient(to right,#0077ff,#09daff);
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 5px;
+    transition: 0.4s;
+}
+
+.kartu-tombol:hover{
+    background:linear-gradient(to right,#09daff,#0077ff);
+    font-size: 14px;
+}
+
+@media only screen and (max-width:700px){
+    .container-pilihan-jasa{
+        flex-direction: column;
+    }
+    .kartu-pertama{
+        margin-bottom: 40px;
+    }
+}
+
+
